@@ -117,8 +117,11 @@ def main():
 
 def bestMove(board, levels):
 	''' selects moves with maximum score '''
-	
-	if levels == 0  or isGameover(board):
+
+	if  isGameover(board):
+		return -100
+
+	if levels == 0:
 		return totalScore[0]
 
 	max_score = -1;
