@@ -144,9 +144,9 @@ def bestMove(board, levels):
 	sc = bestMove(new_board,levels-1)
 	if sc > max_score:
 		max_score = sc
-		mv[0] = 275	
+		mv[0] = 276
 	elif sc==max_score and random.random()>=0.98:
-		mv[0] = 273			
+		mv[0] = 276			
 	totalScore[0]-=totalScore[0]- score
 	
 	new_board = [[board[i][j] for j in range(cols)] for i in range(rows)]	
